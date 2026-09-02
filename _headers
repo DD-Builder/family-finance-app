@@ -1,0 +1,36 @@
+# Cloudflare Pages _headers — Phase X · X-7 / L-1, revised in CF-1.
+# See DEPLOYMENT.md for the rationale per directive.
+#
+# STATUS: these headers become REAL on Cloudflare Pages. They were dead on
+# GitHub Pages, which does not read this file — so for the whole life of this
+# file every directive below was aspirational, and DEPLOYMENT.md's "contract"
+# was fiction. That flips the moment the Cloudflare deploy is live, which is
+# exactly why the COEP line had to go before it did (see below). CSP remains
+# enforced via the <meta> tag in index.html; meta CSP cannot express
+# frame-ancestors or report-uri (per W3C spec), so X-Frame-Options carries
+# the framing defense.
+
+/*
+  # HSTS with preload. `.capital` is not a preloaded TLD (unlike .app/.dev),
+  # so this is what earns twinsphinx.capital the same guarantee: a year-long
+  # max-age plus subdomains, which is what hstspreload.org requires before it
+  # will accept a manual submission. Submitting is a one-time human step —
+  # see DEPLOYMENT.md. Until then this still protects every returning visitor.
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Cross-Origin-Opener-Policy: same-origin
+  # Cross-Origin-Embedder-Policy: DELIBERATELY ABSENT.
+  # `require-corp` would block every cross-origin subresource that does not
+  # opt in with CORP/CORS headers — including the Google Fonts stylesheet and
+  # font files loaded from index.html WITHOUT a crossorigin attribute. On
+  # GitHub Pages this line was inert so nobody noticed; on Cloudflare it would
+  # have gone live and silently broken typography across the whole app on the
+  # first deploy. Re-adding it requires adding crossorigin to those tags (and
+  # verifying the fonts CDN sends CORP) first — do not restore it casually.
+  # We gain nothing today by having it: COEP exists to unlock
+  # crossOriginIsolated APIs (SharedArrayBuffer, high-res timers) and this app
+  # uses none of them.
+  Cross-Origin-Resource-Policy: same-origin
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: accelerometer=(), camera=(), microphone=(), geolocation=(), payment=()

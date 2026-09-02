@@ -1,0 +1,4 @@
+lotId,symbol,qty,avgCost,acquiredDate,notes
+LT-2024-01,ETH,1.5,3000.00,2024-01-15,First Coinbase buy
+LT-2024-02,ETH,2.25,3200.50,2024-02-20,DCA buy
+LT-2024-03,BTC,0.05,55000.00,2024-03-10,Cold-wallet transfer in

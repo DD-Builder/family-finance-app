@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" color="#7c5cbf" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Twelve-month timeline sketch">
+  <line x1="14" y1="96" x2="114" y2="96" stroke-opacity="0.55"/>
+  <g stroke-opacity="0.30">
+    <line x1="22" y1="92" x2="22" y2="100"/>
+    <line x1="38" y1="92" x2="38" y2="100"/>
+    <line x1="54" y1="92" x2="54" y2="100"/>
+    <line x1="70" y1="92" x2="70" y2="100"/>
+    <line x1="86" y1="92" x2="86" y2="100"/>
+    <line x1="102" y1="92" x2="102" y2="100"/>
+  </g>
+  <path d="M22 80 L38 72 L54 76 L70 60 L86 52 L102 38" stroke="currentColor" stroke-opacity="0.85" stroke-dasharray="4 4"/>
+  <circle cx="22" cy="80" r="3" fill="currentColor" fill-opacity="0.85"/>
+  <circle cx="102" cy="38" r="4" fill="#f5f0ff" stroke="currentColor" stroke-opacity="0.85"/>
+  <text x="64" y="118" font-family="DM Sans, sans-serif" font-size="9" text-anchor="middle" fill="currentColor" fill-opacity="0.55" stroke="none">12 months from now</text>
+</svg>

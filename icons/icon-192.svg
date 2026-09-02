@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- v1.6.0 — Mid-Century × Japandi palette.
+       Inkwell ground + Bone wordmark + Mustard chart line. -->
+  <rect width="192" height="192" rx="36" fill="#1B1F23"/>
+
+  <!-- HQ wordmark -->
+  <text
+    x="96"
+    y="122"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="88"
+    fill="#F2EDE4"
+    letter-spacing="-2"
+  >HQ</text>
+
+  <!-- Stock chart trending up -->
+  <polyline
+    points="21,162 43,153 63,158 84,146 105,150 126,135 148,127 168,113"
+    stroke="#C9A227"
+    stroke-width="3"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <circle cx="168" cy="113" r="4" fill="#C9A227"/>
+</svg>

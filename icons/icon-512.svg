@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- v1.6.0 — Mid-Century × Japandi palette.
+       Inkwell ground + Bone wordmark + Mustard chart line. -->
+  <rect width="512" height="512" rx="96" fill="#1B1F23"/>
+
+  <!-- HQ wordmark — centered, Georgia 700 to echo Fraunces in the app -->
+  <text
+    x="256"
+    y="324"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-weight="700"
+    font-size="232"
+    fill="#F2EDE4"
+    letter-spacing="-6"
+  >HQ</text>
+
+  <!-- Stock chart trending up — lower-left to upper-right -->
+  <polyline
+    points="56,432 116,408 168,420 224,388 280,400 336,360 396,340 448,300"
+    stroke="#C9A227"
+    stroke-width="8"
+    stroke-linejoin="round"
+    stroke-linecap="round"
+    fill="none"
+  />
+  <!-- "Current price" dot at the highest point -->
+  <circle cx="448" cy="300" r="11" fill="#C9A227"/>
+</svg>

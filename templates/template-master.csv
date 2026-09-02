@@ -1,0 +1,67 @@
+# Finance HQ — Master CSV Template (v1.4.0)
+#
+# HOW TO USE THIS FILE
+# --------------------
+# 1. Hand this file to Claude (or any AI assistant) with the user's
+#    raw financial records, and ask it to fill in rows that match
+#    the per-kind contracts below. One row = one entity.
+# 2. Save the result and drop the file at the wizard's "Upload"
+#    step (or /data/import). The app parses it row-by-row and
+#    applies what it can.
+# 3. Comment lines (starting with #) and blank lines are ignored.
+#    Keep them or delete them — either is fine.
+#
+# COLUMNS
+# -------
+# kind     — required. One of: profile, lot, sale, reward, debt,
+#            spending, validator, employment
+# id       — entity identifier (lotId, saleId, accountId, pubkey,
+#            etc.). Auto-generated when blank.
+# date     — YYYY-MM-DD. Used by lot.acquiredDate, sale.saleDate,
+#            validator.activatedDate.
+# year     — 4-digit year. Used by employment + spending if month
+#            isn't given.
+# month    — YYYY-MM. Used by reward.month and spending.month.
+# symbol   — ticker / asset code (ETH, BTC, AAPL). Auto-uppercased.
+# qty      — quantity (lot ethQty, sale qty, reward netETH).
+# price    — per-unit price (lot avgCost, sale salePrice,
+#            reward avgPrice).
+# amount   — dollar amount (sale proceeds, debt principal,
+#            spending amount, employment grossWages).
+# label    — free-text descriptor (sale.lotId-link, debt.lender,
+#            spending.category, employment.employer).
+# meta     — semicolon-separated key=value pairs for fields that
+#            don't fit a column. Examples below.
+#
+# PER-KIND CONTRACTS
+# ------------------
+# profile     meta = name=...;birthYear=...;filingStatus=MFJ|MFS|Single|HoH;
+#                    state=CA;dependents=2;localRate=0.038
+#             (state + filingStatus auto-fill the federal/state tax rates.)
+# lot         id, date, symbol, qty, price required
+# sale        id, date, symbol, qty, price required; label = lotId link
+# reward      month, symbol, qty, price required (validator monthly reward)
+# debt        label (lender), amount (principal) required;
+#             meta = interestRate=0.065;minPayment=4200;collateral=950000
+# spending    month, label (category), amount required
+# validator   id (pubkey), date (activatedDate) required;
+#             meta = status=active|exiting|exited
+# employment  year, label (employer), amount (grossWages) required;
+#             meta = federalWithheld=...;stateWithheld=...;k401=...;
+#                    k401Match=...;hsa=...;bonus=...;rsuVested=...
+#
+# EXAMPLES (delete these rows once you have your real data)
+# ---------------------------------------------------------
+kind,id,date,year,month,symbol,qty,price,amount,label,meta
+profile,,,,,,,,,Owner,name=Owner;birthYear=1985;spouseBirthYear=1987;filingStatus=MFJ;state=CA;dependents=2;localRate=0
+lot,LT-2024-01,2024-01-15,,,ETH,1.5,3000,,,
+lot,LT-2024-02,2024-04-22,,,BTC,0.05,68000,,,
+sale,S-2024-001,2024-06-01,,,ETH,0.5,3500,1750,LT-2024-01,
+reward,,,,2024-01,ETH,0.0512,3000,,,
+reward,,,,2024-02,ETH,0.0498,2950,,,
+debt,home-mortgage,,,,,,,650000,Wells Fargo,interestRate=0.0625;minPayment=4200;collateral=950000
+debt,auto-loan,,,,,,,28500,Toyota Financial,interestRate=0.0489;minPayment=485;collateral=42000
+spending,,,,2024-01,,,,12450,total,
+spending,,,,2024-02,,,,11820,total,
+validator,0xa1b2c3d4e5f60718293a4b5c6d7e8f9011223344556677889900aabbccddeeff00112233445566,2023-09-15,,,,,,,,status=active
+employment,,,2024,,,,,185000,Acme Corp,federalWithheld=32400;stateWithheld=9250;k401=23000;k401Match=11500;hsa=4150;bonus=12000

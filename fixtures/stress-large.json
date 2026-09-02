@@ -1,0 +1,2106 @@
+{
+  "config": {
+    "lastUpdated": "",
+    "prices": {
+      "ETH": 3500,
+      "BTC": 75000,
+      "USDC": 1,
+      "DAI": 1,
+      "JPMFED": 1
+    },
+    "tax": {
+      "filingStatus": "MFJ",
+      "federalBrackets": [
+        {
+          "min": 0,
+          "max": 23850,
+          "rate": 0.1
+        },
+        {
+          "min": 23850,
+          "max": 96950,
+          "rate": 0.12
+        },
+        {
+          "min": 96950,
+          "max": 206700,
+          "rate": 0.22
+        },
+        {
+          "min": 206700,
+          "max": 394600,
+          "rate": 0.24
+        },
+        {
+          "min": 394600,
+          "max": 501050,
+          "rate": 0.32
+        },
+        {
+          "min": 501050,
+          "max": 751600,
+          "rate": 0.35
+        },
+        {
+          "min": 751600,
+          "max": null,
+          "rate": 0.37
+        }
+      ],
+      "standardDeduction": 30000,
+      "ltCapGainsRate": 0.2,
+      "niitRate": 0.038,
+      "niitThreshold": 250000,
+      "stateRate": 0.035,
+      "stakingOrdinaryRate": 0.37,
+      "stakingAllInRate": 0.405,
+      "ltAllInRate": 0.273,
+      "accountingMethod": "HIFO"
+    },
+    "quarterlyEstimates": {}
+  },
+  "planning": {
+    "setupComplete": true,
+    "name": "Demo Family",
+    "birthYear": 1985,
+    "spouseBirthYear": 1986,
+    "targetRetirementAge": 60,
+    "lifeExpectancyAge": 90,
+    "annualContribution": 60000,
+    "annualRetirementSpend": 150000,
+    "expectedRealReturn": 0.05,
+    "returnVolatility": 0.15,
+    "safeWithdrawalRate": 0.04,
+    "monteCarloTrials": 500,
+    "notes": ""
+  },
+  "income": {
+    "employment": {
+      "grossPerPeriod": 32692,
+      "netPerPeriod": 22000,
+      "payFrequency": "biweekly",
+      "periodsPerYear": 26,
+      "annualGross": 850000,
+      "federalWithholdingPerPeriod": 7500,
+      "stateWithholdingPerPeriod": 1100,
+      "ssWithholdingPerPeriod": 0,
+      "medicarePerPeriod": 480,
+      "pretaxDeductionsPerPeriod": 0,
+      "federalTaxableWagesPerPeriod": 32692
+    },
+    "vaDisability": {
+      "rating": 0,
+      "monthlyAmount": 0,
+      "taxFree": true,
+      "notes": ""
+    },
+    "coinbaseStaking": {
+      "monthlyReward": 0,
+      "sourceETH": 0,
+      "stakedPct": 0,
+      "lifetimeEarnings": 0
+    },
+    "otherPassive": {
+      "usdcWeekly": 0
+    }
+  },
+  "validators": {
+    "validatorCount": 4,
+    "ethPerValidator": 32,
+    "totalStakedETH": 128,
+    "stakingStartDate": "2024-01-01",
+    "fullCapacityDate": "2024-04-01",
+    "sellable": false,
+    "rewards": [
+      {
+        "month": "2026-01",
+        "netETH": 0.45,
+        "avgPrice": 3400,
+        "incomeFMV": 1530,
+        "lotId": "SR-2026-01"
+      },
+      {
+        "month": "2026-02",
+        "netETH": 0.5,
+        "avgPrice": 3200,
+        "incomeFMV": 1600,
+        "lotId": "SR-2026-02"
+      },
+      {
+        "month": "2026-03",
+        "netETH": 0.48,
+        "avgPrice": 3500,
+        "incomeFMV": 1680,
+        "lotId": "SR-2026-03"
+      }
+    ]
+  },
+  "lots": {
+    "accountingMethod": "HIFO",
+    "lots": [
+      {
+        "lotId": "LX-000",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2000,
+        "totalCost": 2000,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-001",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2010,
+        "totalCost": 4020,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-002",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2020,
+        "totalCost": 6060,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-003",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2030,
+        "totalCost": 8120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-004",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2040,
+        "totalCost": 10200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-005",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2050,
+        "totalCost": 2050,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-006",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2060,
+        "totalCost": 4120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-007",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2070,
+        "totalCost": 6210,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-008",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2080,
+        "totalCost": 8320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-009",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2090,
+        "totalCost": 10450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-010",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2100,
+        "totalCost": 2100,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-011",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2110,
+        "totalCost": 4220,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-012",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2120,
+        "totalCost": 6360,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-013",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2130,
+        "totalCost": 8520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-014",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2140,
+        "totalCost": 10700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-015",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2150,
+        "totalCost": 2150,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-016",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2160,
+        "totalCost": 4320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-017",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2170,
+        "totalCost": 6510,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-018",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2180,
+        "totalCost": 8720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-019",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2190,
+        "totalCost": 10950,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-020",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2200,
+        "totalCost": 2200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-021",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2210,
+        "totalCost": 4420,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-022",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2220,
+        "totalCost": 6660,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-023",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2230,
+        "totalCost": 8920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-024",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2240,
+        "totalCost": 11200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-025",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2250,
+        "totalCost": 2250,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-026",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2260,
+        "totalCost": 4520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-027",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2270,
+        "totalCost": 6810,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-028",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2280,
+        "totalCost": 9120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-029",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2290,
+        "totalCost": 11450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-030",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2300,
+        "totalCost": 2300,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-031",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2310,
+        "totalCost": 4620,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-032",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2320,
+        "totalCost": 6960,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-033",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2330,
+        "totalCost": 9320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-034",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2340,
+        "totalCost": 11700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-035",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2350,
+        "totalCost": 2350,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-036",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2360,
+        "totalCost": 4720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-037",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2370,
+        "totalCost": 7110,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-038",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2380,
+        "totalCost": 9520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-039",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2390,
+        "totalCost": 11950,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-040",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2400,
+        "totalCost": 2400,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-041",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2410,
+        "totalCost": 4820,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-042",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2420,
+        "totalCost": 7260,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-043",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2430,
+        "totalCost": 9720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-044",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2440,
+        "totalCost": 12200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-045",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2450,
+        "totalCost": 2450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-046",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2460,
+        "totalCost": 4920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-047",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2470,
+        "totalCost": 7410,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-048",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2480,
+        "totalCost": 9920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-049",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2490,
+        "totalCost": 12450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-050",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2500,
+        "totalCost": 2500,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-051",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2510,
+        "totalCost": 5020,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-052",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2520,
+        "totalCost": 7560,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-053",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2530,
+        "totalCost": 10120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-054",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2540,
+        "totalCost": 12700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-055",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2550,
+        "totalCost": 2550,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-056",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2560,
+        "totalCost": 5120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-057",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2570,
+        "totalCost": 7710,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-058",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2580,
+        "totalCost": 10320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-059",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2590,
+        "totalCost": 12950,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-060",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2600,
+        "totalCost": 2600,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-061",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2610,
+        "totalCost": 5220,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-062",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2620,
+        "totalCost": 7860,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-063",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2630,
+        "totalCost": 10520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-064",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2640,
+        "totalCost": 13200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-065",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2650,
+        "totalCost": 2650,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-066",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2660,
+        "totalCost": 5320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-067",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2670,
+        "totalCost": 8010,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-068",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2680,
+        "totalCost": 10720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-069",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2690,
+        "totalCost": 13450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-070",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2700,
+        "totalCost": 2700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-071",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2710,
+        "totalCost": 5420,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-072",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2720,
+        "totalCost": 8160,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-073",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2730,
+        "totalCost": 10920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-074",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2740,
+        "totalCost": 13700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-075",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2750,
+        "totalCost": 2750,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-076",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2760,
+        "totalCost": 5520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-077",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2770,
+        "totalCost": 8310,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-078",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2780,
+        "totalCost": 11120,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-079",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2790,
+        "totalCost": 13950,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-080",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2800,
+        "totalCost": 2800,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-081",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2810,
+        "totalCost": 5620,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-082",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2820,
+        "totalCost": 8460,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-083",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2830,
+        "totalCost": 11320,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-084",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2840,
+        "totalCost": 14200,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-085",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2850,
+        "totalCost": 2850,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-086",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2860,
+        "totalCost": 5720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-087",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2870,
+        "totalCost": 8610,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-088",
+        "acquisitionDate": "2024-05-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2880,
+        "totalCost": 11520,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-089",
+        "acquisitionDate": "2024-06-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2890,
+        "totalCost": 14450,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-090",
+        "acquisitionDate": "2024-07-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2900,
+        "totalCost": 2900,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-091",
+        "acquisitionDate": "2024-08-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2910,
+        "totalCost": 5820,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-092",
+        "acquisitionDate": "2024-09-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2920,
+        "totalCost": 8760,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-093",
+        "acquisitionDate": "2024-10-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2930,
+        "totalCost": 11720,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-094",
+        "acquisitionDate": "2024-11-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2940,
+        "totalCost": 14700,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-095",
+        "acquisitionDate": "2024-12-01",
+        "ethQty": 1,
+        "costBasisPerETH": 2950,
+        "totalCost": 2950,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-096",
+        "acquisitionDate": "2024-01-01",
+        "ethQty": 2,
+        "costBasisPerETH": 2960,
+        "totalCost": 5920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-097",
+        "acquisitionDate": "2024-02-01",
+        "ethQty": 3,
+        "costBasisPerETH": 2970,
+        "totalCost": 8910,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-098",
+        "acquisitionDate": "2024-03-01",
+        "ethQty": 4,
+        "costBasisPerETH": 2980,
+        "totalCost": 11920,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "LX-099",
+        "acquisitionDate": "2024-04-01",
+        "ethQty": 5,
+        "costBasisPerETH": 2990,
+        "totalCost": 14950,
+        "source": "coinbase"
+      }
+    ]
+  },
+  "crypto": {
+    "coinbase": [
+      {
+        "asset": "Bitcoin",
+        "ticker": "BTC",
+        "qty": 1.5,
+        "sellable": true
+      }
+    ],
+    "defi": [
+      {
+        "asset": "Aave",
+        "ticker": "AAVE",
+        "qty": 50,
+        "sellable": true
+      }
+    ],
+    "lido": {
+      "asset": "Lido stETH",
+      "ticker": "ETH",
+      "qty": 0,
+      "sellable": true
+    }
+  },
+  "equities": {
+    "brokerage": [
+      {
+        "label": "COIN",
+        "ticker": "COIN",
+        "qty": 200,
+        "sellable": true
+      }
+    ],
+    "retirement": [
+      {
+        "label": "401k",
+        "balance": 450000
+      }
+    ],
+    "moneyMarket": [
+      {
+        "label": "JPM Cash",
+        "balance": 120000
+      }
+    ]
+  },
+  "realestate": {
+    "properties": [
+      {
+        "label": "Primary Home",
+        "currentValue": 1400000,
+        "mortgage": {
+          "originalPrincipal": 900000,
+          "currentBalance": 720000,
+          "apr": 0.065,
+          "termMonths": 360,
+          "monthsRemaining": 312
+        }
+      }
+    ]
+  },
+  "vehicles": {
+    "vehicles": [
+      {
+        "id": "v1",
+        "label": "Family SUV",
+        "year": 2024,
+        "make": "Toyota",
+        "model": "Highlander",
+        "currentValue": 48000
+      },
+      {
+        "id": "v2",
+        "label": "Sedan",
+        "year": 2022,
+        "make": "Honda",
+        "model": "Accord",
+        "currentValue": 24000
+      }
+    ]
+  },
+  "spending": {
+    "monthlyTotals": {
+      "2025": [
+        12000,
+        11500,
+        13000,
+        12800,
+        12200,
+        11800,
+        13500,
+        12500,
+        11800,
+        12700,
+        13200,
+        14500
+      ],
+      "2026": [
+        12500,
+        13200,
+        12900
+      ]
+    },
+    "recurring": {
+      "asOf": "",
+      "items": []
+    },
+    "anomalies": {}
+  },
+  "sales": {
+    "sales": [
+      {
+        "saleId": "S-2025-01-15-ETH-00",
+        "date": "2025-01-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-000"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-02-15-ETH-01",
+        "date": "2025-02-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-001"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-03-15-ETH-02",
+        "date": "2025-03-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-002"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-04-15-ETH-03",
+        "date": "2025-04-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-003"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-05-15-ETH-04",
+        "date": "2025-05-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-004"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-06-15-ETH-05",
+        "date": "2025-06-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-005"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-07-15-ETH-06",
+        "date": "2025-07-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-006"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-08-15-ETH-07",
+        "date": "2025-08-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-007"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-09-15-ETH-08",
+        "date": "2025-09-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-008"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-10-15-ETH-09",
+        "date": "2025-10-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-009"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-11-15-ETH-10",
+        "date": "2025-11-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-010"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2025-12-15-ETH-11",
+        "date": "2025-12-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-011"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-01-15-ETH-12",
+        "date": "2026-01-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-012"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-02-15-ETH-13",
+        "date": "2026-02-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-013"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-03-15-ETH-14",
+        "date": "2026-03-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-014"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-04-15-ETH-15",
+        "date": "2026-04-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-015"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-05-15-ETH-16",
+        "date": "2026-05-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-016"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-06-15-ETH-17",
+        "date": "2026-06-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-017"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-07-15-ETH-18",
+        "date": "2026-07-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-018"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-08-15-ETH-19",
+        "date": "2026-08-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-019"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-09-15-ETH-20",
+        "date": "2026-09-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-020"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-10-15-ETH-21",
+        "date": "2026-10-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-021"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-11-15-ETH-22",
+        "date": "2026-11-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-022"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2026-12-15-ETH-23",
+        "date": "2026-12-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-023"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-01-15-ETH-24",
+        "date": "2027-01-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-024"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-02-15-ETH-25",
+        "date": "2027-02-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-025"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-03-15-ETH-26",
+        "date": "2027-03-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-026"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-04-15-ETH-27",
+        "date": "2027-04-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-027"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-05-15-ETH-28",
+        "date": "2027-05-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-028"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-06-15-ETH-29",
+        "date": "2027-06-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-029"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-07-15-ETH-30",
+        "date": "2027-07-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-030"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-08-15-ETH-31",
+        "date": "2027-08-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-031"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-09-15-ETH-32",
+        "date": "2027-09-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-032"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-10-15-ETH-33",
+        "date": "2027-10-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-033"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-11-15-ETH-34",
+        "date": "2027-11-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-034"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2027-12-15-ETH-35",
+        "date": "2027-12-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-035"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-01-15-ETH-36",
+        "date": "2028-01-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-036"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-02-15-ETH-37",
+        "date": "2028-02-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-037"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-03-15-ETH-38",
+        "date": "2028-03-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-038"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-04-15-ETH-39",
+        "date": "2028-04-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-039"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-05-15-ETH-40",
+        "date": "2028-05-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-040"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-06-15-ETH-41",
+        "date": "2028-06-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-041"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-07-15-ETH-42",
+        "date": "2028-07-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-042"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-08-15-ETH-43",
+        "date": "2028-08-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-043"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-09-15-ETH-44",
+        "date": "2028-09-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-044"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-10-15-ETH-45",
+        "date": "2028-10-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-045"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-11-15-ETH-46",
+        "date": "2028-11-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-046"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2028-12-15-ETH-47",
+        "date": "2028-12-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-047"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-01-15-ETH-48",
+        "date": "2029-01-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-048"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-02-15-ETH-49",
+        "date": "2029-02-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-049"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-03-15-ETH-50",
+        "date": "2029-03-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-050"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-04-15-ETH-51",
+        "date": "2029-04-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-051"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-05-15-ETH-52",
+        "date": "2029-05-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-052"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-06-15-ETH-53",
+        "date": "2029-06-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-053"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-07-15-ETH-54",
+        "date": "2029-07-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-054"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-08-15-ETH-55",
+        "date": "2029-08-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-055"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-09-15-ETH-56",
+        "date": "2029-09-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-056"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-10-15-ETH-57",
+        "date": "2029-10-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-057"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-11-15-ETH-58",
+        "date": "2029-11-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-058"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      },
+      {
+        "saleId": "S-2029-12-15-ETH-59",
+        "date": "2029-12-15",
+        "asset": "ETH",
+        "qty": 0.1,
+        "salePrice": 3000,
+        "proceeds": 300,
+        "costBasis": 250,
+        "gain": 50,
+        "term": "LT",
+        "lotsUsed": [
+          "LX-059"
+        ],
+        "strategy": "HIFO",
+        "notes": "",
+        "linkedRef": null
+      }
+    ]
+  },
+  "debt": {
+    "asOf": "",
+    "accounts": [],
+    "payments": []
+  },
+  "education": {
+    "asOf": "",
+    "assumptions": {
+      "annualCostToday": 38000,
+      "costInflation": 0.05,
+      "expectedReturn": 0.06,
+      "yearsInCollege": 4,
+      "fundedTargetPct": 0.75,
+      "costLabel": "In-state public 4-year (tuition + room & board)"
+    },
+    "children": [
+      {
+        "id": "c1",
+        "name": "Demo Kid",
+        "birthYear": 2018,
+        "currentBalance": 35000,
+        "monthlyContribution": 600
+      }
+    ]
+  },
+  "estate": {
+    "asOf": "",
+    "reviewCadenceMonths": 24,
+    "items": []
+  }
+}
