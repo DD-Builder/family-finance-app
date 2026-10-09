@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" font-family="DM Sans, system-ui, sans-serif" font-size="13" color="#7c5cbf" role="img" aria-label="Encryption-at-rest sequence: passphrase derives a key via PBKDF2 600k iterations, encrypts state with AES-GCM, persists envelope to localStorage">
+  <title>Encryption-at-rest sequence</title>
+  <desc>Passphrase → PBKDF2-SHA256 (600k iterations) → AES-GCM-256 key → encrypt state → localStorage. Key lives in memory; passphrase cached in sessionStorage until tab close.</desc>
+
+  <!-- Lane headers -->
+  <g fill="#1a1f27" text-anchor="middle" font-weight="600">
+    <rect x="20" y="20" width="100" height="36" rx="8" fill="#f5f0ff" stroke="#7c5cbf" stroke-opacity="0.55"/>
+    <text x="70" y="42">User</text>
+    <rect x="160" y="20" width="120" height="36" rx="8" fill="#ffffff" stroke="#7c5cbf" stroke-opacity="0.55"/>
+    <text x="220" y="42">WelcomePage</text>
+    <rect x="320" y="20" width="120" height="36" rx="8" fill="#ffffff" stroke="#7c5cbf" stroke-opacity="0.55"/>
+    <text x="380" y="42">cryptoVault</text>
+    <rect x="480" y="20" width="120" height="36" rx="8" fill="#ffffff" stroke="#7c5cbf" stroke-opacity="0.55"/>
+    <text x="540" y="42">useSessionKey</text>
+    <rect x="630" y="20" width="80" height="36" rx="8" fill="#ffffff" stroke="#7c5cbf" stroke-opacity="0.55"/>
+    <text x="670" y="42">localStorage</text>
+  </g>
+
+  <!-- Lifelines -->
+  <g stroke="#a5adb8" stroke-dasharray="4 4" stroke-opacity="0.6">
+    <line x1="70" y1="60" x2="70" y2="460"/>
+    <line x1="220" y1="60" x2="220" y2="460"/>
+    <line x1="380" y1="60" x2="380" y2="460"/>
+    <line x1="540" y1="60" x2="540" y2="460"/>
+    <line x1="670" y1="60" x2="670" y2="460"/>
+  </g>
+
+  <!-- Arrow defs -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c5cbf"/>
+    </marker>
+    <marker id="arrow-dash" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c5cbf" fill-opacity="0.65"/>
+    </marker>
+  </defs>
+
+  <!-- Messages -->
+  <g fill="#3d4451" font-size="12">
+    <!-- enter passphrase -->
+    <line x1="70" y1="90" x2="218" y2="90" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="144" y="84" text-anchor="middle">enter passphrase</text>
+
+    <!-- deriveKey -->
+    <line x1="222" y1="130" x2="378" y2="130" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="300" y="124" text-anchor="middle">deriveKey(pass, salt, 600k)</text>
+
+    <!-- AES-GCM key returned -->
+    <line x1="378" y1="170" x2="222" y2="170" stroke="#7c5cbf" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
+    <text x="300" y="164" text-anchor="middle" fill="#7d8694">AES-GCM key</text>
+
+    <!-- setVaultKey -->
+    <line x1="222" y1="210" x2="538" y2="210" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="380" y="204" text-anchor="middle">setVaultKey(key)</text>
+
+    <!-- session note -->
+    <rect x="468" y="226" width="200" height="36" rx="6" fill="#fffbeb" stroke="#d97706" stroke-opacity="0.4"/>
+    <text x="568" y="244" text-anchor="middle" font-size="11" fill="#3d4451">passphrase cached in</text>
+    <text x="568" y="258" text-anchor="middle" font-size="11" fill="#3d4451">sessionStorage until tab close</text>
+
+    <!-- edit a slice -->
+    <line x1="70" y1="295" x2="218" y2="295" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="144" y="289" text-anchor="middle">edit a slice</text>
+
+    <!-- encrypt -->
+    <line x1="222" y1="335" x2="378" y2="335" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="300" y="329" text-anchor="middle">encrypt(state, key)</text>
+
+    <!-- envelope returned -->
+    <line x1="378" y1="375" x2="222" y2="375" stroke="#7c5cbf" stroke-dasharray="6 4" marker-end="url(#arrow-dash)"/>
+    <text x="300" y="369" text-anchor="middle" fill="#7d8694">{ iv, ciphertext, salt, iters }</text>
+
+    <!-- setItem -->
+    <line x1="222" y1="420" x2="668" y2="420" stroke="#7c5cbf" marker-end="url(#arrow)"/>
+    <text x="445" y="414" text-anchor="middle">setItem("finance-hq:encrypted", envelope)</text>
+  </g>
+
+  <!-- Footer caption -->
+  <text x="360" y="468" text-anchor="middle" font-size="11" fill="#7d8694">PBKDF2-SHA256 · 600 000 iterations (OWASP 2024) · key lives in memory, never persisted</text>
+</svg>

@@ -1,0 +1,1 @@
+function l(s){var n,c;return((c=(n=s.income)==null?void 0:n.k1Income)==null?void 0:c.length)??0}function t(s){var c,o,r;const n=s.entities;return(((c=n==null?void 0:n.llcs)==null?void 0:c.length)??0)+(((o=n==null?void 0:n.partnerships)==null?void 0:o.length)??0)+(((r=n==null?void 0:n.sCorps)==null?void 0:r.length)??0)}function u(s){return t(s)>0&&l(s)===0}export{t as c,u as s};

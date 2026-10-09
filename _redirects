@@ -1,0 +1,15 @@
+# Cloudflare Pages SPA fallback (CF-1).
+#
+# Every non-asset path serves index.html with a 200, so a deep link or a hard
+# refresh on an in-app route resolves instead of 404ing. Cloudflare Pages tries
+# a real file first, so hashed assets, /constants/pack.json, /sw.js and friends
+# are unaffected — this only catches what would otherwise be a miss.
+#
+# 200, not 302: a redirect would rewrite the address bar and lose the route the
+# user actually asked for. The client router reads location and takes it from
+# there.
+#
+# The GitHub Pages path solves this differently — deploy-public.yml copies
+# index.html to 404.html, because Pages has no rewrite rules at all. That trick
+# stays confined to that workflow; this file is the Cloudflare answer.
+/*    /index.html    200

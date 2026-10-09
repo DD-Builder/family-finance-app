@@ -1,0 +1,16 @@
+{
+  "planning": {
+    "setupComplete": true,
+    "name": "New User",
+    "birthYear": 1990,
+    "targetRetirementAge": 60,
+    "lifeExpectancyAge": 90,
+    "annualContribution": 0,
+    "annualRetirementSpend": 0,
+    "expectedRealReturn": 0.05,
+    "returnVolatility": 0.15,
+    "safeWithdrawalRate": 0.04,
+    "monteCarloTrials": 500,
+    "notes": ""
+  }
+}

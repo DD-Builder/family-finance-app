@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" color="#7c5cbf" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Family ledger with growth chart">
+  <defs>
+    <linearGradient id="welcome-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#faf8f5"/>
+    </linearGradient>
+    <linearGradient id="welcome-accent" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c5cbf" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#7c5cbf" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="160" cy="178" rx="120" ry="6" fill="#1a1f27" fill-opacity="0.05" stroke="none"/>
+  <rect x="44" y="44" width="180" height="116" rx="10" fill="url(#welcome-card)" stroke-opacity="0.55"/>
+  <line x1="60" y1="68" x2="208" y2="68" stroke-opacity="0.45"/>
+  <line x1="60" y1="84" x2="180" y2="84" stroke-opacity="0.30"/>
+  <line x1="60" y1="100" x2="196" y2="100" stroke-opacity="0.30"/>
+  <line x1="60" y1="116" x2="170" y2="116" stroke-opacity="0.30"/>
+  <line x1="60" y1="132" x2="190" y2="132" stroke-opacity="0.30"/>
+  <rect x="156" y="76" width="120" height="80" rx="8" fill="#ffffff" stroke-opacity="0.85"/>
+  <path d="M168 140 L188 124 L204 132 L224 104 L244 92 L264 84" stroke="url(#welcome-accent)" stroke-width="3"/>
+  <circle cx="264" cy="84" r="5" fill="#f5f0ff" stroke="currentColor" stroke-opacity="0.85"/>
+  <g transform="translate(60 152)">
+    <circle cx="0" cy="0" r="6" fill="#f5f0ff" stroke-opacity="0.85"/>
+    <circle cx="14" cy="0" r="6" fill="#ecfdf5" stroke-opacity="0.85"/>
+    <circle cx="28" cy="0" r="6" fill="#fffbeb" stroke-opacity="0.85"/>
+  </g>
+</svg>
