@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" color="#7c5cbf" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Quiet stack of papers">
+  <rect x="34" y="38" width="64" height="74" rx="4" fill="#faf8f5" stroke-opacity="0.45" transform="rotate(-4 66 75)"/>
+  <rect x="32" y="34" width="64" height="74" rx="4" fill="#faf8f5" stroke-opacity="0.55" transform="rotate(2 64 71)"/>
+  <rect x="36" y="30" width="60" height="70" rx="4" fill="#ffffff" stroke-opacity="0.85"/>
+  <line x1="46" y1="46" x2="84" y2="46" stroke-opacity="0.55"/>
+  <line x1="46" y1="58" x2="78" y2="58" stroke-opacity="0.35"/>
+  <line x1="46" y1="70" x2="80" y2="70" stroke-opacity="0.35"/>
+  <line x1="46" y1="82" x2="74" y2="82" stroke-opacity="0.35"/>
+  <circle cx="86" cy="92" r="10" fill="#f5f0ff" stroke-opacity="0.85"/>
+  <path d="M82 92 l3 3 l6 -6" stroke-opacity="0.85"/>
+</svg>

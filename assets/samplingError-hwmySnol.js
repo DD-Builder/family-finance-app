@@ -1,0 +1,1 @@
+function m(t,n,o=1.959964){if(n<=0)return{lo:0,hi:1,halfWidthPp:100};const c=t/n,e=o*o,h=1+e/n,i=(c+e/(2*n))/h,a=o*Math.sqrt(c*(1-c)/n+e/(4*n*n))/h,p=Math.max(0,i-a),f=Math.min(1,i+a);return{lo:p,hi:f,halfWidthPp:(f-p)/2*100}}function r(t,n){return`±${m(Math.round(t*n),n).halfWidthPp.toFixed(1)} pp sampling noise (95% Wilson CI on ${n.toLocaleString()} trials)`}export{r as f};
