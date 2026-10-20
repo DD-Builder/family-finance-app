@@ -1,0 +1,14 @@
+kind,name,birthYear,spouseBirthYear,filingStatus,stateRate,standardDeduction,year,month,date,lotId,saleId,accountId,vehicleId,holdingId,pubkey,symbol,qty,costPerUnit,costBasisPerShare,salePrice,proceeds,fees,account,reinvestedDividend,acquiredDate,saleDate,activatedDate,status,employer,grossWages,federalWithheld,stateWithheld,socialSecurityWages,medicareWages,k401Contribution,k401Match,hsa,fsa,bonusGross,rsuVested,make,model,vin,purchaseDate,purchasePrice,currentValue,mileage,loanAccountId,lender,principal,interestRate,collateral,minPayment,category,amount,grossETH,netETH,avgPrice,penalties,consensus,blockFees,mev,activeValidators,notes
+profile,Dude Sr,1978,1980,MFJ,0.0987,29200,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lot,,,,,,,,,,LT-2024-01,,,,,,ETH,1.5,3000,,,,,,,2024-01-15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,first Coinbase buy
+lot,,,,,,,,,,LT-2024-02,,,,,,ETH,2.25,3200.50,,,,,,,2024-02-20,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,DCA buy
+sale,,,,,,,,,,LT-2024-01,S-2024-001,,,,,ETH,0.5,,,3500,1750,5.25,,,,2024-06-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+equity,,,,,,,,,,,,,,EQ-2018-AAPL-01,,AAPL,50,,42.55,,,,Schwab Brokerage,false,2018-03-12,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Initial buy
+equity,,,,,,,,,,,,,,EQ-2023-VOO-01,,VOO,40,,365.80,,,,Fidelity 401k,false,2023-01-09,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,401k payroll buy
+employment,,,,,,,2024,,,,,,,,,,,,,,,,,,,,,NewCo Inc,268000,52000,15300,168600,268000,23000,13400,4300,2750,38000,58000,,,,,,,,,,,,,,,,,,,,,,
+debt,,,,,,,,,,,,home-mortgage,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Wells Fargo,650000,0.0625,950000,4200,,,,,,,,,,30-yr fixed
+vehicle,,,,,,,,,,,,,V-2021-TESLA,,,,,,,,,,,,,,,,,,,,,,,,,,,,Tesla,Model Y,5YJYGDEE7MF000001,2021-04-18,58400,38500,42100,auto-loan,,,,,,,,,,,,,,,,
+spending,,,,,,,,2024-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,total,12450,,,,,,,,,Holiday hangover
+spending,,,,,,,,2024-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,housing,4800,,,,,,,,,
+reward,,,,,,,,2024-01,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0.0512,0.0512,3000,0,0.042,0.005,0.0042,4,
+validator,,,,,,,,,,,,,,,0xa1b2c3d4e5f60718293a4b5c6d7e8f9011223344556677889900aabbccddeeff00112233445566,,,,,,,,,,2023-09-15,active,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

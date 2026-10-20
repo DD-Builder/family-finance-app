@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "publishedAt": "2026-01-15T00:00:00Z",
+  "years": {
+    "2024": {
+      "amt": {
+        "exemptionSingle": 85700,
+        "exemptionMFJ": 133300
+      },
+      "standardDeduction": {
+        "single": 14600,
+        "mfj": 29200,
+        "hoh": 21900
+      },
+      "estate": {
+        "federalExemption": 13610000
+      }
+    },
+    "2025": {
+      "amt": {
+        "exemptionSingle": 88100,
+        "exemptionMFJ": 137000
+      },
+      "standardDeduction": {
+        "single": 15000,
+        "mfj": 30000,
+        "hoh": 22500
+      },
+      "estate": {
+        "federalExemption": 13990000
+      }
+    },
+    "2026": {
+      "amt": {
+        "exemptionSingle": 90100,
+        "exemptionMFJ": 140200
+      },
+      "standardDeduction": {
+        "single": 15750,
+        "mfj": 31500,
+        "hoh": 23625
+      },
+      "estate": {
+        "federalExemption": 15000000
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+vehicleId,year,make,model,vin,purchaseDate,purchasePrice,currentValue,mileage,loanAccountId,notes
+V-2021-TESLA,2021,Tesla,Model Y,5YJYGDEE7MF000001,2021-04-18,58400,38500,42100,auto-loan,Long Range AWD
+V-2019-HONDA,2019,Honda,CR-V,5J6RW2H85KL000001,2019-09-02,32500,18800,71200,,Paid off 2024-02
+V-2024-RIVIAN,2024,Rivian,R1S,7FDSFE1S2RN000001,2024-07-20,89500,86000,8400,rivian-loan,Adventure Package

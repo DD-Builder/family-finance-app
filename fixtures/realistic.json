@@ -1,0 +1,325 @@
+{
+  "config": {
+    "lastUpdated": "",
+    "prices": {
+      "ETH": 3500,
+      "BTC": 75000,
+      "USDC": 1,
+      "DAI": 1,
+      "JPMFED": 1
+    },
+    "tax": {
+      "filingStatus": "MFJ",
+      "federalBrackets": [
+        {
+          "min": 0,
+          "max": 23850,
+          "rate": 0.1
+        },
+        {
+          "min": 23850,
+          "max": 96950,
+          "rate": 0.12
+        },
+        {
+          "min": 96950,
+          "max": 206700,
+          "rate": 0.22
+        },
+        {
+          "min": 206700,
+          "max": 394600,
+          "rate": 0.24
+        },
+        {
+          "min": 394600,
+          "max": 501050,
+          "rate": 0.32
+        },
+        {
+          "min": 501050,
+          "max": 751600,
+          "rate": 0.35
+        },
+        {
+          "min": 751600,
+          "max": null,
+          "rate": 0.37
+        }
+      ],
+      "standardDeduction": 30000,
+      "ltCapGainsRate": 0.2,
+      "niitRate": 0.038,
+      "niitThreshold": 250000,
+      "stateRate": 0.035,
+      "stakingOrdinaryRate": 0.37,
+      "stakingAllInRate": 0.405,
+      "ltAllInRate": 0.273,
+      "accountingMethod": "HIFO"
+    },
+    "quarterlyEstimates": {}
+  },
+  "planning": {
+    "setupComplete": true,
+    "name": "Demo Family",
+    "birthYear": 1985,
+    "spouseBirthYear": 1986,
+    "targetRetirementAge": 60,
+    "lifeExpectancyAge": 90,
+    "annualContribution": 60000,
+    "annualRetirementSpend": 150000,
+    "expectedRealReturn": 0.05,
+    "returnVolatility": 0.15,
+    "safeWithdrawalRate": 0.04,
+    "monteCarloTrials": 500,
+    "notes": ""
+  },
+  "income": {
+    "employment": {
+      "grossPerPeriod": 32692,
+      "netPerPeriod": 22000,
+      "payFrequency": "biweekly",
+      "periodsPerYear": 26,
+      "annualGross": 850000,
+      "federalWithholdingPerPeriod": 7500,
+      "stateWithholdingPerPeriod": 1100,
+      "ssWithholdingPerPeriod": 0,
+      "medicarePerPeriod": 480,
+      "pretaxDeductionsPerPeriod": 0,
+      "federalTaxableWagesPerPeriod": 32692
+    },
+    "vaDisability": {
+      "rating": 0,
+      "monthlyAmount": 0,
+      "taxFree": true,
+      "notes": ""
+    },
+    "coinbaseStaking": {
+      "monthlyReward": 0,
+      "sourceETH": 0,
+      "stakedPct": 0,
+      "lifetimeEarnings": 0
+    },
+    "otherPassive": {
+      "usdcWeekly": 0
+    }
+  },
+  "validators": {
+    "validatorCount": 4,
+    "ethPerValidator": 32,
+    "totalStakedETH": 128,
+    "stakingStartDate": "2024-01-01",
+    "fullCapacityDate": "2024-04-01",
+    "sellable": false,
+    "rewards": [
+      {
+        "month": "2026-01",
+        "netETH": 0.45,
+        "avgPrice": 3400,
+        "incomeFMV": 1530,
+        "lotId": "SR-2026-01"
+      },
+      {
+        "month": "2026-02",
+        "netETH": 0.5,
+        "avgPrice": 3200,
+        "incomeFMV": 1600,
+        "lotId": "SR-2026-02"
+      },
+      {
+        "month": "2026-03",
+        "netETH": 0.48,
+        "avgPrice": 3500,
+        "incomeFMV": 1680,
+        "lotId": "SR-2026-03"
+      }
+    ]
+  },
+  "lots": {
+    "accountingMethod": "HIFO",
+    "lots": [
+      {
+        "lotId": "L-2024-01",
+        "acquisitionDate": "2024-01-15",
+        "ethQty": 5,
+        "costBasisPerETH": 2400,
+        "totalCost": 12000,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "L-2024-08",
+        "acquisitionDate": "2024-08-15",
+        "ethQty": 3,
+        "costBasisPerETH": 2800,
+        "totalCost": 8400,
+        "source": "coinbase"
+      },
+      {
+        "lotId": "SR-2026-01",
+        "acquisitionDate": "2026-01-15",
+        "ethQty": 0.45,
+        "costBasisPerETH": 3400,
+        "totalCost": 1530,
+        "source": "staking"
+      },
+      {
+        "lotId": "SR-2026-02",
+        "acquisitionDate": "2026-02-15",
+        "ethQty": 0.5,
+        "costBasisPerETH": 3200,
+        "totalCost": 1600,
+        "source": "staking"
+      },
+      {
+        "lotId": "SR-2026-03",
+        "acquisitionDate": "2026-03-15",
+        "ethQty": 0.48,
+        "costBasisPerETH": 3500,
+        "totalCost": 1680,
+        "source": "staking"
+      }
+    ]
+  },
+  "crypto": {
+    "coinbase": [
+      {
+        "asset": "Bitcoin",
+        "ticker": "BTC",
+        "qty": 1.5,
+        "sellable": true
+      }
+    ],
+    "defi": [
+      {
+        "asset": "Aave",
+        "ticker": "AAVE",
+        "qty": 50,
+        "sellable": true
+      }
+    ],
+    "lido": {
+      "asset": "Lido stETH",
+      "ticker": "ETH",
+      "qty": 0,
+      "sellable": true
+    }
+  },
+  "equities": {
+    "brokerage": [
+      {
+        "label": "COIN",
+        "ticker": "COIN",
+        "qty": 200,
+        "sellable": true
+      }
+    ],
+    "retirement": [
+      {
+        "label": "401k",
+        "balance": 450000
+      }
+    ],
+    "moneyMarket": [
+      {
+        "label": "JPM Cash",
+        "balance": 120000
+      }
+    ]
+  },
+  "realestate": {
+    "properties": [
+      {
+        "label": "Primary Home",
+        "currentValue": 1400000,
+        "mortgage": {
+          "originalPrincipal": 900000,
+          "currentBalance": 720000,
+          "apr": 0.065,
+          "termMonths": 360,
+          "monthsRemaining": 312
+        }
+      }
+    ]
+  },
+  "vehicles": {
+    "vehicles": [
+      {
+        "id": "v1",
+        "label": "Family SUV",
+        "year": 2024,
+        "make": "Toyota",
+        "model": "Highlander",
+        "currentValue": 48000
+      },
+      {
+        "id": "v2",
+        "label": "Sedan",
+        "year": 2022,
+        "make": "Honda",
+        "model": "Accord",
+        "currentValue": 24000
+      }
+    ]
+  },
+  "spending": {
+    "monthlyTotals": {
+      "2025": [
+        12000,
+        11500,
+        13000,
+        12800,
+        12200,
+        11800,
+        13500,
+        12500,
+        11800,
+        12700,
+        13200,
+        14500
+      ],
+      "2026": [
+        12500,
+        13200,
+        12900
+      ]
+    },
+    "recurring": {
+      "asOf": "",
+      "items": []
+    },
+    "anomalies": {}
+  },
+  "sales": {
+    "sales": []
+  },
+  "debt": {
+    "asOf": "",
+    "accounts": [],
+    "payments": []
+  },
+  "education": {
+    "asOf": "",
+    "assumptions": {
+      "annualCostToday": 38000,
+      "costInflation": 0.05,
+      "expectedReturn": 0.06,
+      "yearsInCollege": 4,
+      "fundedTargetPct": 0.75,
+      "costLabel": "In-state public 4-year (tuition + room & board)"
+    },
+    "children": [
+      {
+        "id": "c1",
+        "name": "Demo Kid",
+        "birthYear": 2018,
+        "currentBalance": 35000,
+        "monthlyContribution": 600
+      }
+    ]
+  },
+  "estate": {
+    "asOf": "",
+    "reviewCadenceMonths": 24,
+    "items": []
+  }
+}
