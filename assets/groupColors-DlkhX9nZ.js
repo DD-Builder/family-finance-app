@@ -1,0 +1,1 @@
+const t=["accent","emerald","info","amber","coral"],a={accent:"bg-accent-primary",emerald:"bg-status-success",info:"bg-status-info",amber:"bg-status-warning",coral:"bg-status-danger",neutral:"bg-hairline"};function n(r){return a[r??"neutral"]??a.neutral}export{t as G,n as g};

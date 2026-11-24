@@ -1,0 +1,4 @@
+accountId,lender,principal,interestRate,collateral,minPayment,notes
+home-mortgage,Wells Fargo,650000,0.0625,950000,4200,30-yr fixed
+crypto-line,Coinbase,250000,0.085,500000,0,Margin call at 70% LTV
+auto-loan,Chase,28000,0.055,42000,500,5-yr term

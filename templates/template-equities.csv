@@ -1,0 +1,8 @@
+holdingId,account,symbol,qty,costBasisPerShare,acquiredDate,lotId,reinvestedDividend,notes
+EQ-2018-AAPL-01,Schwab Brokerage,AAPL,50,42.55,2018-03-12,,false,Initial buy
+EQ-2019-AAPL-02,Schwab Brokerage,AAPL,25,55.20,2019-08-21,,false,Add on dip
+EQ-2020-AAPL-DR1,Schwab Brokerage,AAPL,1.214,118.40,2020-11-12,,true,Q3 dividend reinvest
+EQ-2021-VTI-01,Schwab IRA,VTI,180,228.50,2021-06-04,,false,Annual IRA contribution
+EQ-2022-VTI-02,Schwab IRA,VTI,90,201.10,2022-10-17,,false,DCA add
+EQ-2023-VOO-01,Fidelity 401k,VOO,40,365.80,2023-01-09,,false,401k payroll buy (pre-tax)
+EQ-2024-COIN-01,Robinhood,COIN,30,84.20,2024-02-15,,false,Crypto exposure via equity

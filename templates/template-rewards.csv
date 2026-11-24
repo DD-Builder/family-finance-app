@@ -1,0 +1,4 @@
+month,grossETH,netETH,avgPrice,penalties,consensus,blockFees,mev,notes
+2024-01,0.0512,0.0512,3000.00,0,0.0420,0.0050,0.0042,
+2024-02,0.0498,0.0490,3150.00,0.0008,0.0410,0.0048,0.0040,Two missed attestations
+2024-03,0.0524,0.0524,3400.00,0,0.0430,0.0052,0.0042,
